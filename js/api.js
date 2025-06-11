@@ -1,6 +1,7 @@
 async function fetchData() {
     try {
-        const response = await fetch('/data/produtos.json');
+        const basePath = window.location.pathname.includes('/pages/') ? '../data/produtos.json' : 'data/produtos.json';
+        const response = await fetch(basePath);
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
