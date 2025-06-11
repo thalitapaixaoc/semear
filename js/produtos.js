@@ -3,10 +3,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         const data = await fetchData(); 
+
+        data.produtos.forEach(produto => {
+            const basePath = window.location.pathname.includes('/pages/') ? '../assets/imagens/' : 'assets/imagens/';
+            const imgSrc = basePath + produto['imagem-principal'];
+            produto['imagem-principal'] = imgSrc;
+            produto.imagens = produto.imagens.map(img => basePath + img);
+        });
+
         window.produtos = data.produtos;
 
         let produtos = data.produtos;
         const servicos = data.servicos;
+
+        data.servicos.forEach(servico => {
+            const basePath = window.location.pathname.includes('/pages/') ? '../assets/imagens/' : 'assets/imagens/';
+            const imgSrc = basePath + servico['imagem-principal'];
+            servico['imagem-principal'] = imgSrc;
+            servico.imagens = servico.imagens.map(img => basePath + img);
+        });;
+
 
         // Mostrando apenas uma parte dos produtos na página inicial
         if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {

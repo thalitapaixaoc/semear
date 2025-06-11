@@ -4,169 +4,169 @@
             "id": 1,
             "nome": "Trigo",
             "preco": "R$ 70,00",
-            "imagem-principal": "/assets/imagens/trigo.jpg",
+            "imagem-principal": "trigo.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de trigo de alta qualidade, cuidadosamente selecionadas para proporcionar uma germinação eficiente e um crescimento saudável. Ideais para cultivo em diversas condições climáticas, essas sementes garantem alta produtividade e resistência a adversidades, sendo uma excelente escolha para agricultores que buscam maximizar seus resultados.",
             "imagens": [
-                "/assets/imagens/trigo.jpg",
-                "/assets/imagens/trigo.jpg",
-                "/assets/imagens/trigo.jpg"
+                "trigo.jpg",
+                "trigo.jpg",
+                "trigo.jpg"
             ]
         },
         {
             "id": 2,
             "nome": "Soja",
             "preco": "R$ 120,00",
-            "imagem-principal": "/assets/imagens/soja.jpg",
+            "imagem-principal": "soja.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de soja premium, desenvolvidas com tecnologia avançada para oferecer resistência a pragas e doenças, além de alto rendimento em colheitas. Essas sementes são ideais para agricultores que desejam obter uma produção de qualidade superior, com grãos uniformes e ricos em nutrientes.",
             "imagens": [
-                "/assets/imagens/soja.jpg",
-                "/assets/imagens/soja.jpg",
-                "/assets/imagens/soja.jpg"
+                "soja.jpg",
+                "soja.jpg",
+                "soja.jpg"
             ]
         },
         {
             "id": 3,
             "nome": "Sorgo",
             "preco": "R$ 63,17",
-            "imagem-principal": "/assets/imagens/sorgo.jpg",
+            "imagem-principal": "sorgo.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de sorgo adaptáveis a diferentes tipos de solo e condições climáticas, garantindo uma colheita eficiente e produtiva. Este produto é ideal para agricultores que buscam uma cultura versátil, com alta resistência e excelente desempenho em diversas regiões.",
             "imagens": [
-                "/assets/imagens/sorgo.jpg",
-                "/assets/imagens/sorgo.jpg",
-                "/assets/imagens/sorgo.jpg"
+                "sorgo.jpg",
+                "sorgo.jpg",
+                "sorgo.jpg"
             ]
         },
         {
             "id": 4,
             "nome": "Café",
             "preco": "R$ 2.480,00",
-            "imagem-principal": "/assets/imagens/cafe.jpg",
+            "imagem-principal": "cafe.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de café de alta qualidade, cuidadosamente selecionadas para o cultivo de grãos aromáticos e saborosos. Este produto é ideal para produtores que desejam obter uma colheita de café premium, com características únicas de sabor e aroma, valorizadas no mercado.",
             "imagens": [
-                "/assets/imagens/cafe.jpg",
-                "/assets/imagens/cafe.jpg",
-                "/assets/imagens/cafe.jpg"
+                "cafe.jpg",
+                "cafe.jpg",
+                "cafe.jpg"
             ]
         },
         {
             "id": 5,
             "nome": "Milho",
             "preco": "R$ 2.480,00",
-            "imagem-principal": "/assets/imagens/milho.jpg",
+            "imagem-principal": "milho.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de milho selecionadas para garantir alta produtividade e resistência a pragas. Este produto é ideal para agricultores que buscam uma colheita abundante, com grãos de excelente qualidade e uniformidade, adaptados a diferentes condições de cultivo.",
             "imagens": [
-                "/assets/imagens/milho.jpg",
-                "/assets/imagens/milho.jpg",
-                "/assets/imagens/milho.jpg"
+                "milho.jpg",
+                "milho.jpg",
+                "milho.jpg"
             ]
         },
         {
             "id": 6,
             "nome": "Feijão preto",
             "preco": "R$ 180,00",
-            "imagem-principal": "/assets/imagens/feijao_preto-index.jpg",
+            "imagem-principal": "feijao_preto-index.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de feijão preto de excelente qualidade, ideais para o cultivo em diferentes regiões. Este produto oferece alta produtividade e resistência, garantindo uma colheita de grãos saborosos e nutritivos, amplamente utilizados na culinária brasileira.",
             "imagens": [
-                "/assets/imagens/feijao_preto-index.jpg",
-                "/assets/imagens/feijao_preto.jpg",
-                "/assets/imagens/feijao_preto.jpg"
+                "feijao_preto-index.jpg",
+                "feijao_preto.jpg",
+                "feijao_preto.jpg"
             ]
         },
         {
             "id": 7,
             "nome": "Amendoim",
             "preco": "R$ 100,00",
-            "imagem-principal": "/assets/imagens/amendoim.jpg",
+            "imagem-principal": "amendoim.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de amendoim de alta qualidade, desenvolvidas para garantir uma colheita abundante e saudável. Este produto é ideal para agricultores que buscam uma cultura rentável, com grãos ricos em nutrientes e saborosos, amplamente utilizados na alimentação humana e animal.",
             "imagens": [
-                "/assets/imagens/amendoim.jpg",
-                "/assets/imagens/amendoim.jpg",
-                "/assets/imagens/amendoim.jpg"
+                "amendoim.jpg",
+                "amendoim.jpg",
+                "amendoim.jpg"
             ]
         },
         {
             "id": 8,
             "nome": "Arroz",
             "preco": "R$ 120,00",
-            "imagem-principal": "/assets/imagens/arrozProdutos.jpg",
+            "imagem-principal": "arrozProdutos.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de arroz de alta qualidade, adaptadas para diversas condições climáticas e tipos de solo. Este produto é ideal para agricultores que buscam uma colheita abundante e de grãos uniformes, garantindo a produção de arroz com excelente sabor e textura.",
             "imagens": [
-                "/assets/imagens/arrozProdutos.jpg",
-                "/assets/imagens/arrozProdutos.jpg",
-                "/assets/imagens/arrozProdutos.jpg"
+                "arrozProdutos.jpg",
+                "arrozProdutos.jpg",
+                "arrozProdutos.jpg"
             ]
         },
         {
             "id": 9,
             "nome": "Feijão Carioca",
             "preco": "R$ 150,00",
-            "imagem-principal": "/assets/imagens/feijao.jpg",
+            "imagem-principal": "feijao.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de feijão carioca de alta qualidade, ideais para o cultivo em diversas regiões. Este produto oferece alta produtividade e resistência, garantindo uma colheita de grãos saborosos e nutritivos, amplamente utilizados na culinária brasileira.",
             "imagens": [
-                "/assets/imagens/feijao.jpg",
-                "/assets/imagens/feijao.jpg",
-                "/assets/imagens/feijao.jpg"
+                "feijao.jpg",
+                "feijao.jpg",
+                "feijao.jpg"
             ]
         },
         {
             "id": 11,
             "nome": "Roundup 1L",
             "preco": "R$ 74,99",
-            "imagem-principal": "/assets/imagens/roundup.jpg",
+            "imagem-principal": "roundup.jpg",
             "categoria": "Defensivos-Agricolas",
             "descricao": "Herbicida Roundup 1L, eficaz no controle de plantas daninhas. Este produto é amplamente utilizado para garantir a limpeza das áreas cultivadas, promovendo um ambiente saudável para o crescimento das culturas e aumentando a produtividade.",
             "imagens": [
-                "/assets/imagens/roundup.jpg",
-                "/assets/imagens/roundup.jpg",
-                "/assets/imagens/roundup.jpg"
+                "roundup.jpg",
+                "roundup.jpg",
+                "roundup.jpg"
             ]
         },
         {
             "id": 12,
             "nome": "Engeo Pleno s 1L",
             "preco": "R$ 120,00",
-            "imagem-principal": "/assets/imagens/engeo_pleno_s-p.png",
+            "imagem-principal": "engeo_pleno_s-p.png",
             "categoria": "Defensivos-Agricolas",
             "descricao": "Defensivo agrícola Engeo Pleno s 1L, desenvolvido para o controle de pragas e doenças em diversas culturas. Este produto é uma solução eficaz para agricultores que buscam proteger suas plantações, garantindo uma colheita saudável e produtiva.",
             "imagens": [
-                "/assets/imagens/engeo_pleno_s-p.png",
-                "/assets/imagens/engeo_pleno_s-p.png",
-                "/assets/imagens/engeo_pleno_s-p.png"
+                "engeo_pleno_s-p.png",
+                "engeo_pleno_s-p.png",
+                "engeo_pleno_s-p.png"
             ]
         },
         {
             "id": 13,
             "nome": "Priori-Xtra 1L",
             "preco": "R$ 99,90",
-            "imagem-principal": "/assets/imagens/Priori-Xtra.png",
+            "imagem-principal": "Priori-Xtra.png",
             "categoria": "Defensivos-Agricolas",
             "descricao": "Herbicida Priori-Xtra 1L, eficaz no controle de plantas daninhas em diversas culturas. Este produto é amplamente utilizado para garantir a limpeza das áreas cultivadas, promovendo um ambiente saudável para o crescimento das culturas e aumentando a produtividade.",
             "imagens": [
-                "/assets/imagens/Priori-Xtra.png",
-                "/assets/imagens/Priori-Xtra.png",
-                "/assets/imagens/Priori-Xtra.png"
+                "Priori-Xtra.png",
+                "Priori-Xtra.png",
+                "Priori-Xtra.png"
             ]
         },
         {
             "id": 14,
             "nome": "Regent 800 1Kg",
             "preco": "R$ 1520,00",
-            "imagem-principal": "/assets/imagens/regent.jpg",
+            "imagem-principal": "regent.jpg",
             "categoria": "Defensivos-Agricolas",
             "descricao": "Defensivo agrícola Regent 800 1Kg, ideal para o controle de insetos e proteção das plantações. Este produto oferece alta eficiência no combate a pragas, contribuindo para a preservação e o desenvolvimento saudável das culturas.",
             "imagens": [
-                "/assets/imagens/regent.jpg",
-                "/assets/imagens/regent.jpg",
-                "/assets/imagens/regent.jpg"
+                "regent.jpg",
+                "regent.jpg",
+                "regent.jpg"
             ]
         }
     ],
@@ -175,48 +175,48 @@
             "id": 1,
             "nome": "Mapeamento",
             "preco": "Consulte",
-            "imagem-principal": "/assets/imagens/drone.jpg",
+            "imagem-principal": "drone.jpg",
             "descricao": "Serviço de mapeamento com drones para análise de áreas agrícolas. Este serviço utiliza tecnologia de ponta para fornecer informações detalhadas sobre o terreno, auxiliando no planejamento e na tomada de decisões estratégicas para o cultivo.",
             "imagens": [
-                "/assets/imagens/drone.jpg",
-                "/assets/imagens/drone.jpg",
-                "/assets/imagens/drone.jpg"
+                "drone.jpg",
+                "drone.jpg",
+                "drone.jpg"
             ]
         },
         {
             "id": 2,
             "nome": "Assistência",
             "preco": "Consulte",
-            "imagem-principal": "/assets/imagens/assistencia-no-campo.jpg",
+            "imagem-principal": "assistencia-no-campo.jpg",
             "descricao": "Assistência técnica no campo para otimização de cultivos. Este serviço oferece suporte especializado para agricultores, ajudando a melhorar a produtividade e a eficiência das operações agrícolas.",
             "imagens": [
-                "/assets/imagens/assistencia-no-campo.jpg",
-                "/assets/imagens/assistencia-no-campo.jpg",
-                "/assets/imagens/assistencia-no-campo.jpg"
+                "assistencia-no-campo.jpg",
+                "assistencia-no-campo.jpg",
+                "assistencia-no-campo.jpg"
             ]
         },
         {
             "id": 3,
             "nome": "Pulverização",
             "preco": "Consulte",
-            "imagem-principal": "/assets/imagens/drone-pulv.jpg",
+            "imagem-principal": "drone-pulv.jpg",
             "descricao": "Pulverização aérea com drones para controle de pragas. Este serviço oferece uma solução moderna e eficiente para a aplicação de defensivos agrícolas, garantindo uma cobertura uniforme e precisa.",
             "imagens": [
-                "/assets/imagens/drone-pulv.jpg",
-                "/assets/imagens/drone-pulv.jpg",
-                "/assets/imagens/drone-pulv.jpg"
+                "drone-pulv.jpg",
+                "drone-pulv.jpg",
+                "drone-pulv.jpg"
             ]
         },
         {
             "id": 4,
             "nome": "Análise de Solo",
             "preco": "Consulte",
-            "imagem-principal": "/assets/imagens/analise-de-solo.jpg",
+            "imagem-principal": "analise-de-solo.jpg",
             "descricao": "Análise detalhada do solo para melhorar a produtividade. Este serviço fornece informações essenciais sobre a composição e as necessidades do solo, ajudando os agricultores a planejar o uso de insumos de forma eficiente.",
             "imagens": [
-                "/assets/imagens/analise-de-solo.jpg",
-                "/assets/imagens/analise-de-solo.jpg",
-                "/assets/imagens/analise-de-solo.jpg"
+                "analise-de-solo.jpg",
+                "analise-de-solo.jpg",
+                "analise-de-solo.jpg"
             ]
         }
     ]
