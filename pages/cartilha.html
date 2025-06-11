@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cartilha de Ética</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="../assets/icons/semerar-icon.png" />
+        <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/linearicons-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/perfect-scrollbar/perfect-scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="../assets/style/util.css">
+        <link rel="stylesheet" type="text/css" href="../assets/style/main.css">
+        <link rel="stylesheet" type="text/css" href="../assets/style/cartilha.css">
+    </head>
+    <body class="animsition">
+        <header>
+            <div class="container-menu-desktop">
+                <div class="wrap-menu-desktop">
+                    <nav class="limiter-menu-desktop container">
+                        <a href="/index.html" class="logo"><img src="/assets/imagens/logo.png" alt="Logo Semear"></a>
+                        <div class="menu-desktop"> <!-- inicio do menu-->
+                            <ul class="main-menu">
+                                <li class="active-menu"><a href="/index.html">Inicio</a></li>
+                                <li><a href="/pages/product.html">Produtos</a></li>
+                                <li><a href="/pages/about.html">Sobre Nós</a></li>
+                                <li><a href="/pages/contact.html">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="wrap-icon-header flex-w flex-r-m"> <!-- minha conta, carrinho e procurar -->
+                            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 ">
+                                <a href="/pages/login.html"><img src="/assets/icons/icon-perfil.png"
+                                        alt="Ícone de cadastro"></a>
+                            </div>
+                            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                                data-notify="2">
+                                <i class="zmdi zmdi-shopping-cart"></i>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="wrap-header-mobile"><!-- Header Mobile -->
+                <div class="logo-mobile"><!-- Logo moblie -->
+                    <a href="/index.html"><img src="/assets/imagens/logo.png" alt="Logo Semear"></a>
+                </div>
+                <div class="wrap-icon-header flex-w flex-r-m m-r-15"><!-- Icon header -->
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
+                        data-notify="2">
+                        <i class="zmdi zmdi-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="btn-show-menu-mobile hamburger hamburger--squeeze"><!-- Button show menu -->
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </div>
+            </div>
+            <div class="menu-mobile"><!-- Menu Mobile -->
+                <ul class="main-menu-m">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/product.html">Produtos</a></li>
+                    <li><a href="/pages/about.html">Sobre Nós</a></li>
+                    <li><a href="/pages/contact.html">Entre em contato</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="wrap-header-cart js-panel-cart"><!-- Resumo lateral do carrinho -->
+                <div class="s-full js-hide-cart"></div>
+                <div class="header-cart flex-col-l p-l-65 p-r-25">
+                    <div class="header-cart-title flex-w flex-sb-m p-b-8">
+                        <span class="mtext-103 cl2">Seu carrinho</span>
+                        <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
+                            <i class="zmdi zmdi-close"></i>
+                        </div>
+                    </div>
+                    <div class="header-cart-content flex-w js-pscroll">
+                        <ul class="header-cart-wrapitem w-full"> <!--Produtos no carrinho-->
+                            <li class="header-cart-item flex-w flex-t m-b-12">
+                                <div class="header-cart-item-img">
+                                    <img src="../assets/imagens/soja.jpg" alt="Imagem de Soja">
+                                </div>
+                                <div class="header-cart-item-txt p-t-8">
+                                    <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">Soja</a>
+                                    <span class="header-cart-item-info">1 x R$ 120,00</span>
+                                </div>
+                            </li>
+                            <li class="header-cart-item flex-w flex-t m-b-12">
+                                <div class="header-cart-item-img">
+                                    <img src="../assets/imagens/cafe.jpg" alt="Imagens de café">
+                                </div>
+                                <div class="header-cart-item-txt p-t-8">
+                                    <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">Café</a>
+                                    <span class="header-cart-item-info">1 x R$ 2.480,00</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="w-full"><!--Valor do carrinho-->
+                            <div class="header-cart-total w-full p-tb-40">Total: R$ 2.600,00</div>
+                            <div class="header-cart-buttons flex-w w-full">
+                                <a href="shoping-cart.html"
+                                    class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">Ver
+                                    carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="position-relative banner-titulo">
+                <img src="../assets/imagens/Banner-cartilha.png" alt="Minha Conta Banner" class="w-100">
+                <h2 class="ltext-105 cl0 txt-center position-absolute top-50 start-50 translate-middle">Cartilha</h2>
+            </section>
+
+            <section class="bg0 p-t-75 p-b-120">
+                <div class="container">
+                    <!-- Cartilha aqui -->
+                    <h1>CARTILHA DE DESCARTE RESPONSÁVEL DE EMBALAGENS DE DEFENSIVOS AGRÍCOLAS</h1>
+                    <h2>Juntos por uma Agricultura Mais Sustentável</h2>
+                    <p>O descarte correto das embalagens de defensivos agrícolas não é apenas uma obrigação legal, mas
+                        também um compromisso com o meio ambiente e a sustentabilidade da produção agrícola. Quando cuidamos
+                        bem do solo, da água e do ar, garantimos um futuro produtivo para o campo e para as próximas
+                        gerações.</p>
+
+                    <h2>LEGISLAÇÃO E RESPONSABILIDADE COMPARTILHADA</h2>
+                    <p>O Brasil tem um dos sistemas mais avançados do mundo para a destinação correta dessas embalagens, com
+                        regras bem definidas:</p>
+                    <ul>
+                        <li><strong>Lei nº 9.974/2000 e Decreto nº 4.074/2002 determinam que produtores, revendedores e indústrias
+                            são responsáveis pelo ciclo de vida das embalagens.</strong></li>
+                        <li><strong>Norma ABNT NBR 13968 define os padrões de lavagem e destinação correta.</strong></li>
+                    </ul>
+                    <p>Cada um tem um papel fundamental para manter o sistema funcionando e evitar impactos negativos no
+                        meio ambiente.</p>
+
+                    <h2>EXEMPLOS DE DEFENSIVOS AGRÍCOLAS</h2>
+                    <ul>
+                        <li><strong>Herbicida</strong> – Usado no controle de plantas daninhas.</li>
+                        <li><strong>Inseticida</strong> – Usado para combater insetos invasores.</li>
+                        <li><strong>Fungicida</strong> – Usado no controle de fungos que afetam as plantas.</li>
+                        <li><strong>Bactericida</strong> – Usado contra bactérias que causam doenças nas plantas.</li>
+                        <li><strong>Nematicida</strong> – Usado para controlar nematóides (vermes) que atacam as raízes das
+                            plantas.</li>
+                        <li><strong>Acaricida</strong> – Usado no combate a ácaros que prejudicam as plantações.</li>
+                    </ul>
+
+                    <h2>BOAS PRÁTICAS PARA PROTEGER O MEIO AMBIENTE</h2>
+
+                    <h3>1. Tríplice lavagem ou lavagem sob pressão (para embalagens rígidas)</h3>
+                    <ul>
+                        <li>Após esvaziar a embalagem, adicione um pouco de água limpa, tampe e agite bem.</li>
+                        <li>Despeje essa água no pulverizador e repita o processo três vezes.</li>
+                        <li>Perfure a embalagem para evitar reutilização indevida.</li>
+                    </ul>
+                    <p><em>Por que isso é importante?</em> Assim, evitamos que resíduos químicos contaminem o solo e os
+                        cursos d’água.</p>
+
+                    <h3>2. Armazenamento temporário com segurança</h3>
+                    <ul>
+                        <li>Guarde as embalagens lavadas e perfuradas em um local coberto, sinalizado e longe de fontes de
+                            água.</li>
+                        <li>Para embalagens flexíveis (sacos plásticos), não lave! Apenas armazene separadamente até a
+                            devolução.</li>
+                    </ul>
+                    <p><em>Por que isso é importante?</em> Isso evita a contaminação de animais, pessoas e do próprio
+                        ambiente da propriedade.</p>
+
+                    <h3>3. Devolução nas centrais de recebimento</h3>
+                    <ul>
+                        <li>Em até um ano após o uso, leve as embalagens para um ponto de coleta autorizado pelo inpEV.</li>
+                        <li>Caso sua região tenha coleta itinerante, aproveite essa facilidade.</li>
+                    </ul>
+                    <p><em>Por que isso é importante?</em> As embalagens podem ser recicladas e transformadas em novos
+                        produtos ou encaminhadas para incineração segura, sem prejudicar o meio ambiente.</p>
+
+                    <h2>EXEMPLOS DE DESCARTE CORRETO</h2>
+                    <ul>
+                        <li><strong>Devolução nas centrais do inpEV:</strong> Método mais comum, garantindo que as
+                            embalagens sejam reaproveitadas de forma segura.</li>
+                        <li><strong>Coletas itinerantes:</strong> Caminhões percorrem áreas rurais recolhendo embalagens,
+                            facilitando o descarte correto para pequenos e médios produtores.</li>
+                    </ul>
+
+                    <h2>OS RISCOS DO DESCARTE INCORRETO</h2>
+                    <ul>
+                        <li><span class="alerta">❌ Solo e água contaminados:</span> O descarte inadequado pode envenenar
+                            plantações, animais e até o abastecimento de água.</li>
+                        <li><span class="alerta">❌ Risco à saúde:</span> O contato com resíduos químicos pode causar
+                            intoxicações e doenças.</li>
+                        <li><span class="alerta">❌ Punições legais:</span> Multas e penalidades podem ser aplicadas a quem
+                            não seguir as normas.</li>
+                    </ul>
+                    <p><strong>Lembre-se:</strong> O que é jogado na natureza volta para nós.</p>
+
+                    <h2>PROGRAMAS DE CONSCIENTIZAÇÃO PARA UM CAMPO MAIS LIMPO</h2>
+                    <ul>
+                        <li><strong>Campo Limpo (iniciativa do inpEV):</strong> Um dos maiores programas de logística
+                            reversa do mundo, promovendo a destinação correta das embalagens.</li>
+                        <li><strong>Palestras e treinamentos de cooperativas e sindicatos rurais:</strong> Capacitações para
+                            orientar os produtores sobre o descarte correto é de grande importância.</li>
+                    </ul>
+
+                    <div class="destaque">
+                        <h2>FAÇA SUA PARTE!</h2>
+                        <p>Cada ação conta. Ao descartar corretamente as embalagens de defensivos agrícolas, você protege
+                            sua lavoura, sua família e contribui para um campo mais sustentável. Vamos juntos cuidar do
+                            futuro da agricultura e do meio ambiente!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg3 p-t-75 p-b-32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 p-b-50 d-flex align-items-center">
+                        <a href="../index.html" class="logo"><img src="../assets/imagens/logo.png" alt="Logo Semear"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-2 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Institucional</h4>
+                        <ul>
+                            <li class="p-b-10"><a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">Missão</a></li>
+                            <li class="p-b-10"><a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">Visão</a></li>
+                            <li class="p-b-10"><a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">Valores</a></li>
+                            <li class="p-b-10"><a href="./pages/cartilha.html" class="stext-107 cl7 hov-cl1 trans-04">Cartilha de ética</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Produtos e Serviços</h4>
+                        <ul>
+                        <li class="p-b-10"><a href="product.html#women" class="stext-107 cl7 hov-cl1 trans-04">Sementes</a></li>
+                            <li class="p-b-10"><a href="product.html#men" class="stext-107 cl7 hov-cl1 trans-04">Defensivos Agricolas</a></li>
+                            <li class="p-b-10"><a href="product.html#service" class="stext-107 cl7 hov-cl1 trans-04">Mapeamento com drone</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Contato</h4>
+                        <p class="stext-107 cl7 size-201">Rua: Dos Anjos, 2000 - Vila Industrial</p>
+                        <p class="stext-107 cl7 size-201">CEP: 19000-010</p>
+                        <p class="stext-107 cl7 size-201">Presidente Prudente - SP</p>
+                        <p class="stext-107 cl7 size-201">Telefone: (18)3222-0101</p>
+                        <p class="stext-107 cl7 size-201">Whatsapp: (18)99981-1001</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Redes Sociais</h4>
+                        <a href="https://www.facebook.com/profile.php?id=61576659457252" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/semearseeds" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+                        <form>
+                            <div class="wrap-input1 w-full p-b-4">
+                                <input class="input1 bg-none plh1 stext-107 cl7" type="email" id="email" name="email" placeholder="email@exemplo.com"required>
+                                <div class="focus-input1 trans-04"></div>
+                            </div>
+                            <span id="validacao-email" class="text-danger"></span>
+                            <div class="p-t-18">
+                                <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04" onclick="validarEmail()">Inscreva-se</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="p-t-40">
+                    <p class="stext-107 cl6 txt-center">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. Todos os direitos reservados |
+                        Desenvolvido por Vision IT
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="btn-back-to-top" id="myBtn"><!-- seta para voltar ao topo-->
+            <span class="symbol-btn-back-to-top"><i class="zmdi zmdi-chevron-up"></i></span>
+        </div>
+        <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../vendor/animsition/js/animsition.min.js"></script>
+        <script src="../vendor/bootstrap/js/popper.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../vendor/select2/select2.min.js"></script>
+        <script>
+            $(".js-select2").each(function () {
+                $(this).select2({
+                    minimumResultsForSearch: 20,
+                    dropdownParent: $(this).next('.dropDownSelect2')
+                });
+            })
+        </script>
+        <script src="../vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+        <script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script>
+            $('.js-pscroll').each(function () {
+                $(this).css('position', 'relative');
+                $(this).css('overflow', 'hidden');
+                var ps = new PerfectScrollbar(this, {
+                    wheelSpeed: 1,
+                    scrollingThreshold: 1000,
+                    wheelPropagation: false,
+                });
+
+                $(window).on('resize', function () {
+                    ps.update();
+                })
+            });
+        </script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Semear - Cadastro</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="../assets/icons/semerar-icon.png"/>
+		<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconic/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" type="text/css" href="../fonts/linearicons-v1.0.0/icon-font.min.css">
+		<link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+		<link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+		<link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
+		<link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../vendor/perfect-scrollbar/perfect-scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../assets/style/util.css">
+		<link rel="stylesheet" type="text/css" href="../assets/style/main.css">
+		<link rel="stylesheet" href="../assets/style/cadastro.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.19/jquery.inputmask.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body class="animsition">
+		<header>
+			<div class="container-menu-desktop">
+				<div class="wrap-menu-desktop">
+					<nav class="limiter-menu-desktop container">
+						<a href="/index.html" class="logo"><img src="/assets/imagens/logo.png" alt="Logo Semear"></a>
+						<div class="menu-desktop"> <!-- inicio do menu-->
+							<ul class="main-menu">
+								<li class="active-menu"><a href="/index.html">Inicio</a></li>
+								<li><a href="/pages/product.html">Produtos</a></li>
+								<li><a href="/pages/about.html">Sobre Nós</a></li>
+								<li><a href="/pages/contact.html">Contato</a></li>
+							</ul>
+						</div>
+						<div class="wrap-icon-header flex-w flex-r-m"> <!-- minha conta, carrinho e procurar -->
+							<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 ">
+								<a href="/pages/login.html"><img src="/assets/icons/icon-perfil.png"
+										alt="Ícone de cadastro"></a>
+							</div>
+							<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+								data-notify="2">
+								<i class="zmdi zmdi-shopping-cart"></i>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="wrap-header-mobile"><!-- Header Mobile -->
+				<div class="logo-mobile"><!-- Logo moblie -->
+					<a href="/index.html"><img src="/assets/imagens/logo.png" alt="Logo Semear"></a>
+				</div>
+				<div class="wrap-icon-header flex-w flex-r-m m-r-15"><!-- Icon header -->
+					<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
+						data-notify="2">
+						<i class="zmdi zmdi-shopping-cart"></i>
+					</div>
+				</div>
+				<div class="btn-show-menu-mobile hamburger hamburger--squeeze"><!-- Button show menu -->
+					<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+				</div>
+			</div>
+			<div class="menu-mobile"><!-- Menu Mobile -->
+				<ul class="main-menu-m">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/pages/product.html">Produtos</a></li>
+					<li><a href="/pages/about.html">Sobre Nós</a></li>
+					<li><a href="/pages/contact.html">Entre em contato</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="wrap-header-cart js-panel-cart"><!-- Resumo lateral do carrinho -->
+				<div class="s-full js-hide-cart"></div>
+				<div class="header-cart flex-col-l p-l-65 p-r-25">
+					<div class="header-cart-title flex-w flex-sb-m p-b-8">
+						<span class="mtext-103 cl2">Seu carrinho</span>
+						<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
+							<i class="zmdi zmdi-close"></i>
+						</div>
+					</div>	
+					<div class="header-cart-content flex-w js-pscroll">
+						<ul class="header-cart-wrapitem w-full"> <!--Produtos no carrinho-->
+							<li class="header-cart-item flex-w flex-t m-b-12">
+								<div class="header-cart-item-img">
+									<img src="../assets/imagens/soja.jpg" alt="Imagem de Soja">
+								</div>
+								<div class="header-cart-item-txt p-t-8">
+									<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">Soja</a>
+									<span class="header-cart-item-info">1 x R$ 120,00</span>
+								</div>
+							</li>
+							<li class="header-cart-item flex-w flex-t m-b-12">
+								<div class="header-cart-item-img">
+									<img src="../assets/imagens/cafe.jpg" alt="Imagens de café">
+								</div>
+								<div class="header-cart-item-txt p-t-8">
+									<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">Café</a>
+									<span class="header-cart-item-info">1 x R$ 2.480,00</span>
+								</div>
+							</li>
+						</ul>
+						<div class="w-full"><!--Valor do carrinho-->
+							<div class="header-cart-total w-full p-tb-40">Total: R$ 2.600,00</div>
+							<div class="header-cart-buttons flex-w w-full">
+								<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">Ver carrinho</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class=" col-12 col-md-10 bg0 p-t-50 p-b-120">
+				<div class="login-container" style="padding: 20px; background-color: #27812e; text-align: center; border-radius: 10px;">
+					<h2 style="color: #f2d200; font-family: poppins-medium; margin: 0;">Cadastro</h2>
+				 </div>
+				<div class="row">
+				   <form id="meu" name="meu" class="container needs-validation" novalidate style="max-width: 1200px;">
+					<div class="row g-3">
+						<div class="col-md-12">
+							<div class="form-floating">
+								<select id="perfil" name="perfil" class="form-select" required>
+									<option value="">Selecione um perfil</option>
+									<option value="Pessoa Fisica">Pessoa Física</option>
+									<option value="Pessoa Juridica">Pessoa Jurídica</option>
+								</select>
+								<label for="perfil">Perfil do Cliente</label>
+								<div class="invalid-feedback">Por favor, selecione um perfil.</div>
+							</div>
+						</div>						
+						<div class="col-md-6">
+							<div class="form-floating">
+								<input type="text" id="nome" class="form-control" placeholder="Digite seu primeiro nome" required>
+								<label for="nome">Primeiro nome / Razão social</label>
+								<div class="invalid-feedback">Informe seu primeiro nome ou Razão social.</div>
+							</div>
+						</div>						
+						<div class="col-md-6">
+							<div class="form-floating">
+								<input type="text" id="ultimoNome" class="form-control" placeholder="Digite seu último nome" required>
+								<label for="ultimoNome">Último nome / Nome fantasia</label>
+								<div class="invalid-feedback">Informe seu último nome ou Nome fantasia.</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-floating">
+								<input type="date" id="date" name="date" class="form-control" required>
+								<label for="date">Data de Nascimento</label>
+								<div class="invalid-feedback">Informe sua data de nascimento.</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-floating">
+								<input type="text" id="cpf" name="cpf" class="form-control" placeholder="000.000.000-00" required>
+								<label for="cpf">CPF</label>
+								<div class="invalid-feedback">Informe seu CPF.</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-floating">
+								<input type="text" id="rg" name="rg" class="form-control" placeholder="Digite seu RG" required>
+								<label for="rg">RG</label>
+								<div class="invalid-feedback">Informe seu RG.</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<label class="form-label d-block mb-2">Gênero</label>								
+							<div class="d-inline-flex gap-3">
+							  <div class="form-check mr-3">
+								<input class="form-check-input" type="radio" name="genero" id="masc" value="Masculino" required>
+								<label class="form-check-label" for="masc" style="margin-left: -15px;">Masculino</label>
+							  </div>
+							  <div class="form-check mr-3">
+								<input class="form-check-input" type="radio" name="genero" id="fem" value="Feminino">
+								<label class="form-check-label" for="fem" style="margin-left: -15px;">Feminino</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
+								<label class="form-check-label" for="outro" style="margin-left: -15px;">Outro</label>
+							  </div>
+							</div>								
+							<div class="invalid-feedback d-block" id="erro-genero"></div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-floating">
+								<input type="text" id="cnpj" name="cnpj" class="form-control" placeholder="00.000.000/0000-00">
+								<label for="cnpj">CNPJ</label>
+								<div class="invalid-feedback">Informe o CNPJ.</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-floating">
+								<input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email" required>
+								<label for="email">E-mail</label>
+								<div class="invalid-feedback">Email inválido</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-floating">
+								<input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+								<label for="telefone">Celular</label>
+								<div class="invalid-feedback">Informe seu número de celular.</div>
+							</div>
+						</div>
+						<div class="col-md-3 align-items-center d-flex justify-content-left">
+							<div class="form-check mt-1 ml-2">
+								<input type="checkbox" name="whats" id="whats" class="form-check-input">
+								<label class="form-check-label" for="whats">Whatsapp</label>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-floating">
+								<input type="text" id="cep" name="cep" class="form-control" placeholder="00000-000" required>
+								<label for="cep">CEP</label>
+								<div class="invalid-feedback">Informe seu CEP.</div>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="form-floating">
+								<input type="text" id="endereco" name="endereco" class="form-control" placeholder="Rua, Avenida..." required>
+								<label for="endereco">Endereço</label>
+								<div class="invalid-feedback">Informe seu endereço.</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-floating">
+								<input type="text" id="numero" name="numero" class="form-control" placeholder="Número" required>
+								<label for="numero">Número</label>
+								<div class="invalid-feedback">Informe o número</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-floating">
+								<input type="text" id="complemento" name="complemento" class="form-control" placeholder="Complemento">
+								<label for="complemento">Complemento</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-floating">
+								<input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade" required>
+								<label for="cidade">Cidade</label>
+								<div class="invalid-feedback">Informe sua cidade.</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-floating">
+								<select id="estado" name="estado" class="form-select" required>
+									<option value="">Selecione</option>
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espírito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+								</select>
+								<label for="estado">Estado</label>
+								<div class="invalid-feedback">Selecione seu estado.</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-floating">
+								<input type="password" id="password" name="password" class="form-control" required>
+								<label for="password">Senha</label>
+								<div class="invalid-feedback">Informe sua senha.</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-floating">
+								<input type="password" id="password-confirmation" name="password-confirmation" class="form-control" required>
+								<label for="password-confirmation">Confirme a senha</label>
+								<div class="invalid-feedback">As senhas não coincidem.</div>
+							</div>
+						</div>
+						<div class="col-5">
+							<label for="nota" class="form-label">Nota para a experiência do cadastro: <span id="valorNota">10</span></label>
+							<input type="range" id="nota" name="nota" class="form-range" min="0" max="10" value="10" oninput="document.getElementById('valorNota').textContent = this.value">
+						</div>
+						  <div class="col-12">
+							<div class="form-check">
+							  <input type="checkbox"  name="contato" id="contato" class="form-check-input" checked>
+							  <label class="form-check-label" for="contato" style="margin-left: -15px;">Aceita receber e-mails</label>
+							</div>
+						  </div>
+						</div>
+						<div class="col-12" style="text-align: center; margin-top: 20px; display: flex; gap: 10px; justify-content: center;">
+						  <button type="submit" id="btnAdicionar" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" style="width: 200px;">Cadastrar-se</button>
+						  <button type="button" onclick="confirmarCancelamento()" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" style="background-color: #bc2f10; color: white; width: 200px;">Cancelar</button>
+						</div>
+					</div>
+				</form>
+				</div>
+			</section>
+			<hr/>
+			<div class="container">
+				<h3 class="text-center mb-4" style="color: #27812e;">Clientes Cadastrados</h3>
+				<div class="table-responsive">
+					<table class="table table-striped table-hover text-center align-middle" id="tabelaCliente">
+						<thead class="table-dark">
+							<tr>
+								<th><input type="checkbox" id="ckTodos" ></th>
+								<th>Nome</th>
+								<th>Último nome</th>
+								<th>CPF</th>
+								<th>Ações</th>
+							</tr>
+						</thead>
+						<tbody id="tb-body">
+							<!-- Linhas geradas dinamicamente -->
+						</tbody>
+					</table>
+					<button type="button" id="btnExcluir" class="btn btn-danger mb-4 mt-4">Excluir Selecionados</button>
+				</div>	 
+			</div> 
+	
+		</main>
+		<footer class="bg3 p-t-75 p-b-32">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-lg-3 p-b-50 d-flex align-items-center" >
+						<a href="../index.html" class="logo"><img src="../assets/imagens/logo.png" alt="Logo Semear"></a>
+					</div>
+					<div class="col-sm-6 col-lg-2 p-b-50">
+						<h4 class="stext-301 cl0 p-b-30">Institucional</h4>
+						<ul>
+							<li class="p-b-10"><a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">Missão</a></li>
+							<li class="p-b-10"><a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">Visão</a></li>
+							<li class="p-b-10"><a href="about.html" class="stext-107 cl7 hov-cl1 trans-04">Valores</a></li>
+							<li class="p-b-10"><a href="./pages/cartilha.html" class="stext-107 cl7 hov-cl1 trans-04">Cartilha de ética</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h4 class="stext-301 cl0 p-b-30">Produtos e Serviços</h4>
+						<ul>
+							<li class="p-b-10"><a href="product.html#women" class="stext-107 cl7 hov-cl1 trans-04">Sementes</a></li>
+							<li class="p-b-10"><a href="product.html#men" class="stext-107 cl7 hov-cl1 trans-04">Defensivos Agricolas</a></li>
+							<li class="p-b-10"><a href="product.html#service" class="stext-107 cl7 hov-cl1 trans-04">Mapeamento com drone</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h4 class="stext-301 cl0 p-b-30">Contato</h4>
+						<p class="stext-107 cl7 size-201">Rua: Dos Anjos, 2000 - Vila Industrial</p>
+						<p class="stext-107 cl7 size-201">CEP: 19000-010</p>
+						<p class="stext-107 cl7 size-201">Presidente Prudente - SP</p>
+						<p class="stext-107 cl7 size-201">Telefone: (18)3222-0101</p>
+						<p class="stext-107 cl7 size-201">Whatsapp: (18)99981-1001</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h4 class="stext-301 cl0 p-b-30">Redes Sociais</h4>
+						<a href="https://www.facebook.com/profile.php?id=61576659457252" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/semearseeds" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"><i class="fa fa-instagram"></i></a>
+					</div>
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+						<form>
+							<div class="wrap-input1 w-full p-b-4">
+								<input class="input1 bg-none plh1 stext-107 cl7" type="email" id="email" name="email" placeholder="email@exemplo.com"required>
+								<div class="focus-input1 trans-04"></div>
+							</div>
+							<span id="validacao-email" class="text-danger"></span>
+							<div class="p-t-18">
+								<button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04" onclick="validarEmail()">Inscreva-se</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="p-t-40">
+					<p class="stext-107 cl6 txt-center">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos os direitos reservados | Desenvolvido por Vision IT</p>
+				</div>
+			</div>
+		</footer>
+		<div class="btn-back-to-top" id="myBtn"><!-- seta para voltar ao topo-->
+			<span class="symbol-btn-back-to-top"><i class="zmdi zmdi-chevron-up"></i></span>
+		</div>
+		<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../vendor/animsition/js/animsition.min.js"></script>
+		<script src="../vendor/bootstrap/js/popper.js"></script>
+		<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../vendor/select2/select2.min.js"></script>
+		<script>
+			$(".js-select2").each(function(){
+				$(this).select2({
+					minimumResultsForSearch: 20,
+					dropdownParent: $(this).next('.dropDownSelect2')
+				});
+			})
+		</script>
+		<script src="../vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+		<script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script>
+			$('.js-pscroll').each(function(){
+				$(this).css('position','relative');
+				$(this).css('overflow','hidden');
+				var ps = new PerfectScrollbar(this, {
+					wheelSpeed: 1,
+					scrollingThreshold: 1000,
+					wheelPropagation: false,
+				});
+
+				$(window).on('resize', function(){
+					ps.update();
+				})
+			});
+		</script>
+		<script src="../js/main.js"></script>
+		<script src="../js/cadastro.js"></script>
+	</body>
+</html>

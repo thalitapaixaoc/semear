@@ -1,0 +1,118 @@
+.errado{
+  color: red;
+}
+
+.correto{
+  color: green;
+}
+
+
+
+/*VALIDAÇÃO FORMU*/
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+}
+.log2{
+    display: flex;
+    flex-direction: row;
+}
+.login-container {
+    justify-self: center  ; 
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    align-self: center;
+    
+    height: 90%;
+    margin: 50px 40px;
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, .28);
+    border-radius: 30px;
+    
+}
+p{   flex: 1;}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-box {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 13px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container a {
+    color: #f2d200;
+    text-decoration: none;
+    font-size: 14px;
+    align-self: flex-end;
+}
+
+ h1, h3, label{
+   color: rgb(44, 44, 44);;
+}
+
+label{
+    margin-bottom: 1px;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #4caf50;
+    border-radius: 5px;
+  }
+
+  input[type="range"]::-moz-range-track {
+    height: 8px;
+    background: #4caf50;
+    border-radius: 5px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked {
+    accent-color: #4caf50;
+  }

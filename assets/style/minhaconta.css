@@ -1,0 +1,150 @@
+.num-product {
+  appearance: none !important;
+  -moz-appearance: textfield !important;
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Chrome: remove as setas */
+.num-product::-webkit-inner-spin-button,
+.num-product::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+#usuarioimg{
+    height: 300px;
+    margin-top: 50px;
+    ;
+}
+ .cadastro{
+    display: flex;
+    justify-content: center;
+}
+.log2{
+    display: flex;
+    flex-direction: row;
+}
+.login-container {
+    justify-self: center  ; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-self: center;
+    
+    height: 90%;
+    margin: 50px 10px;
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, .28);
+    border-radius: 30px;
+    max-width: 900px;
+    gap: 20px;
+    
+}
+p{   flex: 1;}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-box {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label,form h2{
+    padding: 10px 0px;
+    color: rgb(44, 44, 44);
+}
+form h2{
+    text-align: center;
+}
+form input {
+    padding: 13px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-lateral {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    align-self: baseline;
+    margin: 10px 0;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+
+.menu-lateral {
+    width: 250px; /* Define um tamanho fixo */
+    flex-shrink: 0; /* Evita que o menu diminua */
+}
+
+.form-container {
+    flex: 1; /* Faz o formulário ocupar o resto do espaço */
+}
+
+.menu-lateral {
+    width: 200px; /* Define um tamanho fixo para o menu */
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+@media (max-width: 768px) { 
+    .login-container {
+        flex-direction: column; /* Coloca os itens em coluna */
+        align-items: center;
+    }
+
+    .menu-lateral {
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 20px; /* Dá um espaço entre o menu e o formulário */
+    }
+
+    .menu-lateral ul {
+        display: flex;
+        flex-direction: row; /* Transforma a lista em linha */
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .menu-lateral ul li {
+        list-style: none;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    #usuimg{
+        justify-content: center;
+    }
+}
+
