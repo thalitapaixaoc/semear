@@ -136,6 +136,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     function destroySlickGallery() {
         const slickWrapper = $('.wrap-slick3');
         const slickInstance = slickWrapper.find('#modal-gallery-product');
+        // Verifica se o slick já está inicializado antes de tentar destruí-lo
+        if (!slickInstance.hasClass('slick-initialized')) {
+            return;
+        }
         slickInstance.slick('unslick');
     }
 
