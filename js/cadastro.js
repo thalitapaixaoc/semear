@@ -2,31 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let ckPai = document.querySelector('#ckTodos');
     ckPai.addEventListener('click', selecionaTodos);
 
-    let btnAdicionar = document.querySelector('#btnAdicionar');
-    btnAdicionar.addEventListener('click', adicionarItem);
-
     let btnExcluir = document.querySelector('#btnExcluir');
     btnExcluir.addEventListener('click', excluirSelecionados);
 
     aplicarMascaras();
     validarFormulario();
 
+    /* tabela dinamica*/
+    var vetClientes = [
+        { id: 1, nome: 'João', ultimoNome: 'Santos', cpf: '123.456.789-00' },
+        { id: 2, nome: 'Maria', ultimoNome: 'Oliveira', cpf: '987.654.321-00' },
+    ];
+
+    montarTabela(vetClientes);
 });
 
-
-/* tabela dinamica*/
-var vetClientes = [
-    { id: 1, nome: 'João', ultimoNome: 'Santos', cpf: '123.456.789-00' },
-    { id: 2, nome: 'Maria', ultimoNome: 'Oliveira', cpf: '987.654.321-00' },
-];
-
-var btnAdicionar = document.querySelector('#btnAdicionar');
-btnAdicionar.addEventListener('click', adicionarItem);
-
-var btnExcluir = document.querySelector('#btnExcluir');
-btnExcluir.addEventListener('click', excluirSelecionados);
-
-montarTabela(vetClientes);
 
 
 function montarTabela(dados) {
@@ -82,17 +72,6 @@ function excluirItem(idDelete) {
 function adicionarItem(event) {
     event.preventDefault();
     const form = document.getElementById('meu');
-
-    // Remove atributo de controle
-    form.dataset.valido = "false";
-
-    // Dispara a validação principal (do submit)
-    form.dispatchEvent(new Event('submit'));
-
-    // Checa se a validação passou
-    if (form.dataset.valido !== "true") {
-        return;
-    }
 
     // Captura campos principais
     let nome = form.querySelector('#nome');
@@ -273,7 +252,7 @@ function validarFormulario() {
     numeroInput?.addEventListener('input', e => {
         e.target.value = e.target.value.replace(/\D/g, '');
     });
-
+    
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         var valido = true;
@@ -380,6 +359,7 @@ function validarFormulario() {
 
         if (valido) {
             form.dataset.valido = "true"; // marca como válido
+            adicionarItem(e); // Chama a função para adicionar o item
             // form.submit(); // Se for enviar para backend
         } else {
             form.dataset.valido = "false"; // marca como inválido
