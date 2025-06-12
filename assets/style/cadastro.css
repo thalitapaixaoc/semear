@@ -56,8 +56,12 @@ form input {
     padding: 13px;
     font-size: 18px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
+.input1 {
+  border: none !important;
+}
 .login-container a {
     color: #f2d200;
     text-decoration: none;
