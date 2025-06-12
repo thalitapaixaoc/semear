@@ -2,7 +2,7 @@
     "produtos": [
         {
             "id": 1,
-            "nome": "Trigo",
+            "nome": "Trigo Premium 60kg",
             "preco": "R$ 70,00",
             "imagem-principal": "trigo.jpg",
             "categoria": "Sementes",
@@ -15,8 +15,8 @@
         },
         {
             "id": 2,
-            "nome": "Soja",
-            "preco": "R$ 120,00",
+            "nome": "Soja Convencional 60kg",
+            "preco": "R$ 170,00",
             "imagem-principal": "soja.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de soja premium, desenvolvidas com tecnologia avançada para oferecer resistência a pragas e doenças, além de alto rendimento em colheitas. Essas sementes são ideais para agricultores que desejam obter uma produção de qualidade superior, com grãos uniformes e ricos em nutrientes.",
@@ -28,8 +28,8 @@
         },
         {
             "id": 3,
-            "nome": "Sorgo",
-            "preco": "R$ 63,17",
+            "nome": "Sorgo Forrageiro 60kg",
+            "preco": "R$ 60,00",
             "imagem-principal": "sorgo.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de sorgo adaptáveis a diferentes tipos de solo e condições climáticas, garantindo uma colheita eficiente e produtiva. Este produto é ideal para agricultores que buscam uma cultura versátil, com alta resistência e excelente desempenho em diversas regiões.",
@@ -41,8 +41,8 @@
         },
         {
             "id": 4,
-            "nome": "Café",
-            "preco": "R$ 2.480,00",
+            "nome": "Café Arábica 60kg",
+            "preco": "R$ 600,00",
             "imagem-principal": "cafe.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de café de alta qualidade, cuidadosamente selecionadas para o cultivo de grãos aromáticos e saborosos. Este produto é ideal para produtores que desejam obter uma colheita de café premium, com características únicas de sabor e aroma, valorizadas no mercado.",
@@ -54,8 +54,8 @@
         },
         {
             "id": 5,
-            "nome": "Milho",
-            "preco": "R$ 2.480,00",
+            "nome": "Milho Híbrido 60kg",
+            "preco": "R$ 80,00",
             "imagem-principal": "milho.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de milho selecionadas para garantir alta produtividade e resistência a pragas. Este produto é ideal para agricultores que buscam uma colheita abundante, com grãos de excelente qualidade e uniformidade, adaptados a diferentes condições de cultivo.",
@@ -67,8 +67,8 @@
         },
         {
             "id": 6,
-            "nome": "Feijão preto",
-            "preco": "R$ 180,00",
+            "nome": "Feijão Preto 60kg",
+            "preco": "R$ 200,00",
             "imagem-principal": "feijao_preto-index.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de feijão preto de excelente qualidade, ideais para o cultivo em diferentes regiões. Este produto oferece alta produtividade e resistência, garantindo uma colheita de grãos saborosos e nutritivos, amplamente utilizados na culinária brasileira.",
@@ -80,8 +80,8 @@
         },
         {
             "id": 7,
-            "nome": "Amendoim",
-            "preco": "R$ 100,00",
+            "nome": "Semente de Amendoim 60kg",
+            "preco": "R$ 210,00",
             "imagem-principal": "amendoim.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de amendoim de alta qualidade, desenvolvidas para garantir uma colheita abundante e saudável. Este produto é ideal para agricultores que buscam uma cultura rentável, com grãos ricos em nutrientes e saborosos, amplamente utilizados na alimentação humana e animal.",
@@ -93,8 +93,8 @@
         },
         {
             "id": 8,
-            "nome": "Arroz",
-            "preco": "R$ 120,00",
+            "nome": "Semente de Arroz 60kg",
+            "preco": "R$ 110,00",
             "imagem-principal": "arrozProdutos.jpg",
             "categoria": "Sementes",
             "descricao": "Sementes de arroz de alta qualidade, adaptadas para diversas condições climáticas e tipos de solo. Este produto é ideal para agricultores que buscam uma colheita abundante e de grãos uniformes, garantindo a produção de arroz com excelente sabor e textura.",

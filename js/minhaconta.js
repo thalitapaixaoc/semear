@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById('minhaconta');
 
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             email.classList.add('is-invalid');
             valido = false;
         }
+
 
         // Validação de senha e confirmação
         var senha = document.getElementById('password');
