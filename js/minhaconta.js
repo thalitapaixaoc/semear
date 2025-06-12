@@ -1,12 +1,10 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById('minhaconta');
 
-    // Aplica máscaras
     Inputmask("(99) 99999-9999").mask(document.getElementById('telefone'));
     Inputmask("99999-999").mask(document.getElementById('cep'));
 
-    // Impede mais de duas palavras no nome
+    ///// primeiro nome
     var nomeInput = document.getElementById('nome');
     nomeInput.addEventListener('input', function () {
         var palavras = nomeInput.value.trim().split(/\s+/);
@@ -15,12 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Validação manual estilo Bootstrap
+    ////// letras no campo 
+    var numeroInput = document.getElementById('numero');
+    numeroInput.addEventListener('input', function () {
+        this.value = this.value.replace(/\D/g, '');
+    });
+
+    // Validação estilo Bootstrap
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         var valido = true;
 
-        // Lista de campos obrigatórios
         var campos = [
             'nome', 'ultimoNome', 'email', 'telefone',
             'cep', 'endereco', 'numero', 'cidade',
@@ -37,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Validação específica para e-mail
         var email = document.getElementById('email');
         var emailRegex = /\S+@\S+\.\S+/;
         if (!emailRegex.test(email.value)) {
@@ -45,8 +47,24 @@ document.addEventListener('DOMContentLoaded', function () {
             valido = false;
         }
 
+        var telefone = document.getElementById('telefone');
+        var telefoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
+        if (!telefoneRegex.test(telefone.value)) {
+            telefone.classList.add('is-invalid');
+            valido = false;
+        } else {
+            telefone.classList.remove('is-invalid');
+        }
 
-        // Validação de senha e confirmação
+        var cep = document.getElementById('cep');
+        var cepRegex = /^\d{5}-\d{3}$/;
+        if (!cepRegex.test(cep.value)) {
+            cep.classList.add('is-invalid');
+            valido = false;
+        } else {
+            cep.classList.remove('is-invalid');
+        }
+
         var senha = document.getElementById('password');
         var senhaConfirm = document.getElementById('password-confirmation');
         if (senha.value !== senhaConfirm.value || senha.value.trim() === '') {
@@ -58,10 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (valido) {
             alert('Cadastro atualizado com sucesso!');
-            // form.submit(); // descomente para enviar
         } else {
-            alert('Por favor, corrija os campos em vermelho.');
+            alert('Por favor, preencha os campos corretamente.');
         }
     });
 });
-
